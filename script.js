@@ -3,9 +3,12 @@ class Animal {
 	constructor (species){
 		this.species = "species";
 	}
-	makessound(){
+	makesound(){
 		console.log("Generic animal sound");
 	}
+	 get species() {
+    return this.species;
+  }
 }
 
 class Dog extends Animal {
